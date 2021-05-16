@@ -3,7 +3,7 @@ export const List = (props) => {
   
   return(
     <div>
-      <h4 >{title}</h4>
+      <h4 style={{color:'green',background:'yellow'}}>{title}</h4>
       <div>リストです。</div>
     </div>
   )

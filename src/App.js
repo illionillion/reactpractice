@@ -9,7 +9,7 @@ function App() {
     setDescription('クリック後の表示です、');
   }
   return (
-    <div >
+    <div style={{color:'red',background:'blue'}}>
       {/* ゼロから始めるReact入門 */}
       {description}
       <List title="取扱言語一覧"/>
