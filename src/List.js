@@ -1,7 +1,8 @@
 const LANGUAGES=[
   'JavaScript',
   'PHP',
-  'VBA'
+  'VBA',
+  'React.js'
 ];
 
 export const List = () => {
@@ -9,15 +10,18 @@ export const List = () => {
   
   return(
     <div>
-      {/* <h4 style={{color:'green',background:'yellow'}}>{title}</h4> */}
-      {
-      
-          LANGUAGES.map((string,number)=>{
-            return   <ul><li><div key={number} style={{color:'green',background:'yellow'}}>{string}</div></li></ul>
-          })
+      <ul>
         
-          
-      }
+        {/* <h4 style={{color:'green',background:'yellow'}}>{title}</h4> */}
+        {
+        
+            LANGUAGES.map((string,number)=>{
+              return   <li><div key={number} style={{color:'green',background:'yellow',border:'1px solid black'}}>{string}</div></li>
+            })
+        
+        
+        }
+      </ul>
     </div>
   )
 }
